@@ -14,7 +14,7 @@ var bgImg = new Image();
 bgImg.onload = function () {
 	bgReady = true;
 };
-bgImg.src = "background.png";
+bgImg.src = "../images/background.png";
 
 //player
 var playerImgReady = false;
@@ -22,7 +22,7 @@ var playerImg = new Image();
 playerImg.onload = function () {
 	playerImgReady = true;
 };
-playerImg.src = "hero.png";
+playerImg.src = "../images/hero.png";
 
 //Mob
 var mobImgReady = false;
@@ -30,7 +30,7 @@ var mobImg = new Image();
 mobImg.onload = function() {
 	mobImgReady = true;
 };
-mobImg.src = "monster.png";
+mobImg.src = "../images/monster.png";
 
 // Objects
 function GameImage(file) {
@@ -92,7 +92,7 @@ Player.prototype.Move = function(mod){
 };
 
 // TEST
-testImage = new GameImage("hero.png");
+testImage = new GameImage("../images/hero.png");
 PC = new Player(512, testImage);
 PC.x = 50;
 PC.y = 50;
